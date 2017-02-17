@@ -1,2 +1,1 @@
-#
-nodejs typescript backend using Hapi(web framework)  jwt(auth) sequelize(orm) 
+> Hapi microservice written in typescript to render email templates using server side ReactJS

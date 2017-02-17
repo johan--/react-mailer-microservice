@@ -1,14 +1,14 @@
 {
-  "name": "backend-ts",
+  "name": "react-mailer-microservice",
   "version": "0.0.1",
-  "description": "",
+  "description": "Hapi microservice written in typescript to render email templates using server side ReactJS",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon --watch 'src/**/*.*' --ignore 'src/**/*.spec.ts' --exec 'ts-node' src/index.ts"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "glob": "^7.1.1",
     "hapi": "^16.1.0",
