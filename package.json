@@ -1,0 +1,31 @@
+{
+  "name": "backend-ts",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --watch 'src/**/*.*' --ignore 'src/**/*.spec.ts' --exec 'ts-node' src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "glob": "^7.1.1",
+    "hapi": "^16.1.0",
+    "hapi-auth-jwt2": "^7.2.4",
+    "lodash": "^4.17.4",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-html-email": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/glob": "^5.0.30",
+    "@types/hapi": "^16.0.0",
+    "@types/lodash": "^4.14.52",
+    "@types/react": "^15.0.10",
+    "@types/sequelize": "^4.0.41",
+    "nodemon": "^1.11.0",
+    "ts-node": "^2.1.0",
+    "typescript": "^2.1.6"
+  }
+}
