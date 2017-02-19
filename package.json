@@ -4,7 +4,10 @@
   "description": "Hapi microservice written in typescript to render email templates using server side ReactJS",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --watch 'src/**/*.*' --ignore 'src/**/*.spec.ts' --exec 'ts-node' src/index.ts"
+    "dev": "nodemon --watch 'src/**/*.*' --ignore 'src/**/*.spec.ts' --exec 'ts-node' src/index.ts",
+    "build": "npm run clean && tsc",
+    "clean": "shx rm -rf dist",
+    "start": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
@@ -25,6 +28,7 @@
     "@types/react": "^15.0.10",
     "@types/sequelize": "^4.0.41",
     "nodemon": "^1.11.0",
+    "shx": "^0.2.2",
     "ts-node": "^2.1.0",
     "typescript": "^2.1.6"
   }
