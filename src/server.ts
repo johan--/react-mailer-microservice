@@ -27,8 +27,8 @@ export function init() {
         }
 
         server.auth.strategy('jwt', 'jwt', {
-            key: process.env.JWT_SECRET,
-            verifyFunc: validate,
+            key: process.env.jwt_secret,
+            validateFunc: validate,
             verifyOptions: {
                 algorithms: ['HS256']
             }
