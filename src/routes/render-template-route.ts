@@ -6,7 +6,7 @@ export default function (server: Hapi.Server) {
         method: 'post',
         path: '/render-template',
         handler(request: Hapi.Request, reply: Hapi.IReply) {
-            const {payload} = request.payload
+            const {payload} = request
             const emailHTML = templateRenderService.renderTemplate(payload.templateName, payload.data)
             reply(emailHTML)
         }
