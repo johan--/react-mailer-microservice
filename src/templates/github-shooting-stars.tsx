@@ -55,9 +55,9 @@ const GithubShootingStars = ({title, repos}: Props) => (
     </Email>
 )
 
-export function renderTemplate(payload): string {
+export function renderTemplate(data): string {
     return renderEmail(<GithubShootingStars
         title="Github Shooting Stars"
-        repos={payload.repos}
+        repos={data.repos}
     />)
 }
