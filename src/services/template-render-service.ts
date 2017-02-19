@@ -1,4 +1,4 @@
-export function renderTemplate(templateName: string, payload: Object) {
+export function renderTemplate(templateName: string, data: Object) {
     const template = require(`../templates/${templateName}`)
-    return template.renderTemplate(payload)
+    return template.renderTemplate(data)
 }
